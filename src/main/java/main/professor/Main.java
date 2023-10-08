@@ -7,6 +7,7 @@ public class Main {
         new Validador();
 
         String jsonFile = null;
+        int id;
         String nome;
         String dia;
         String horario;
@@ -15,6 +16,14 @@ public class Main {
         int sala;
 
         Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Id do professor: ");
+        id = scanner.nextInt();
+        scanner.nextLine();
+        if(!Validador.validaId(id)){
+            System.out.println("Nome invalido");
+            return;
+        }
 
         System.out.print("Nome do Professor: ");
         nome = scanner.nextLine();
@@ -55,7 +64,7 @@ public class Main {
             return;
         }
 
-        jsonFile = Json.createJson(nome, atendimento, periodo, sala);
+        jsonFile = Json.createJson(id,nome, atendimento, periodo, sala);
         System.out.println(jsonFile);
 
         Json.save(jsonFile);

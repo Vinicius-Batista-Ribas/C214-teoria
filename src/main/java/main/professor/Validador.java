@@ -6,6 +6,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Validador {
+
+    public static boolean validaId(int id){
+        return id > 0;
+    }
     public static boolean validaNome(String nome){
         if(nome == null || nome.trim().isEmpty()){
             return false;
