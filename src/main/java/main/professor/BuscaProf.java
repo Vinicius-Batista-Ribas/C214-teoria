@@ -17,6 +17,7 @@ public class BuscaProf {
         JsonObject jsonObject = JsonParser.parseString(jsonProf).getAsJsonObject();
 
         return new Professor(
+                jsonObject.get("Id").getAsInt(),
                 jsonObject.get("Nome").getAsString(),
                 jsonObject.get("Horario").getAsString(),
                 jsonObject.get("Periodo").getAsString(),

@@ -6,9 +6,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Json {
-    public static String createJson(String nome, String atendimento, String periodo, int sala) {
+    public static String createJson(int id, String nome, String atendimento, String periodo, int sala) {
 
-        Professor prof = new Professor(null,null,null,null,null);
+        Professor prof = new Professor(0,null,null,null,null,null);
         prof.setNome(nome);
         prof.setHorario(atendimento);
         prof.setPeriodo(periodo);

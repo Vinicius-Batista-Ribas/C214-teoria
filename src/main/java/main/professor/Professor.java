@@ -1,7 +1,7 @@
 package main.professor;
 
 public class Professor {
-    private static int proximoId = 1;
+
     private int Id;
     private String Nome;
     private String Horario;
@@ -9,8 +9,8 @@ public class Professor {
     private String Sala;
     private String Predio;
 
-    public Professor( String nome, String horario, String periodo, String sala, String predio){
-        this.Id = proximoId++;
+    public Professor( int id, String nome, String horario, String periodo, String sala, String predio){
+        this.Id = id;
         this.Nome = nome;
         this.Horario = horario;
         this.Periodo = periodo;
@@ -56,5 +56,13 @@ public class Professor {
 
     public void setPredio(String predio) {
         Predio = predio;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
 }
