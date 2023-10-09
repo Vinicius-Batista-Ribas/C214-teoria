@@ -115,7 +115,6 @@ public class teste {
         boolean resultado = Validador.validaPeriodo(periodo);
         assertTrue(resultado);
     }
-    //Testa se as entradas são validas
     @Test
     public void testeTodasEntradasValidas() {
         // Dados de entrada válidos
