@@ -2,6 +2,8 @@ package main.professor;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -39,5 +41,20 @@ public class Validador {
 
     public static boolean validaSala(int sala){
         return sala >= 1 && sala <= 30;
+    }
+
+    public static boolean validaPredio(int numeroPredio, int minimo, int maximo) {
+        return numeroPredio >= minimo && numeroPredio <= maximo;
+    }
+
+
+    public String Validador(int id) {
+        // Implementação da busca do professor
+        return "Nome do Professor"; // Substitua pelo resultado real da busca.
+    }
+
+    public boolean profExiste(int id) {
+        // Implementação para verificar se o professor existe
+        return true; // Substitua pelo resultado real da verificação.
     }
 }

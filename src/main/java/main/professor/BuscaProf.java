@@ -24,7 +24,6 @@ public class BuscaProf {
                 jsonObject.get("Predio").getAsString()
         );
 
-
     }
 
     public boolean profExiste(int id){
